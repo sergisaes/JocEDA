@@ -1,0 +1,96 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Game Demo",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Game",
+      "args": [
+        "Proba",
+        "Demo",
+        "Demo",
+        "Demo",
+        "-s",
+        "30",
+        "-i",
+        "default.cnf",
+        "-o",
+        "default.res"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "makeDebug"
+    },
+    {
+      "name": "Debug Game Dummy",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Game",
+      "args": [
+        "Proba",
+        "Dummy",
+        "Willypep",
+        "Dummy",
+        "-s",
+        "30",
+        "-i",
+        "default.cnf",
+        "-o",
+        "default.res"
+      ],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "makeDebug"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Sergi/Desktop/2n/EDA/hastalapola/game",
+      "program": "c:/Users/Sergi/Desktop/2n/EDA/hastalapola/game/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
